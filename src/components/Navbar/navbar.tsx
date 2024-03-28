@@ -4,18 +4,18 @@ import Link from "next/link"
 const links = [
   {
     name: 'Servicios',
-    href: '/servicios'
+    href: '/Servicios'
   },
   {
     name: 'Reservas',
-    href: '/reservas'
+    href: '/Reservas'
   }
 ]
 
 export default function Navbar() {
   return (
-    <nav className="border border-red-500">
-      <div className="flex max-w-screen-xl items-center p-4 border border-sky-500 justify-between mx-auto">
+    <nav>
+      <div className="flex max-w-screen-xl items-center p-4 justify-between mx-auto">
 
         <Link href={'/'}>
           <span className="flex items-center">
