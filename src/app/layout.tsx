@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Russo_One, Numans, Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/Navbar/navbar";
 import Link from "next/link";
@@ -25,14 +25,14 @@ export default function RootLayout({
           <NavBar />
         </div>
 
+        <div>
+          {children}
+        </div>
+        
         <div className="fixed z-10 bottom-0 left-0 m-6">
           <Link href={'/'}>
             <Image src={'/images/icons/icon_whatsapp.png'} alt="" width={1000} height={1000} className="h-20 w-20"/>
           </Link>
-        </div>
-
-        <div>
-          {children}
         </div>
 
       </body>
